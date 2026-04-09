@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Review – Page 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ── Main frame (exact Figma dimensions) ── */
+    .frame {
+      position: relative;
+      width:  1280px;
+      height: 832px;
+      overflow: hidden;
+      background: #ffffff;
+      flex-shrink: 0;
+    }
+
+    /* Shared helper – every child is absolutely placed */
+    .frame > * { position: absolute; }
+  </style>
+</head>
+<body>
+<div class="viewport-shell">
+<div class="frame">
+
+  <!-- ══════════════════════════════════════════════════
+       1. BACKGROUND WALLPAPER
+       Figma: x:-936  y:-276  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-936px; top:-276px; width:3828px; height:1709px;
+              object-fit:cover; z-index:0;">
+
+  <!-- ══════════════════════════════════════════════════
+       2. PAGE TITLE
+       Figma: x:70  y:31  w:1137  h:149
+       Font : Inter 600 · 29px · center · radial-gradient fill
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:70px; top:31px; width:1137px; height:149px;
+    font-weight:600; font-size:29px;
+    line-height:1.2102em; text-align:center;
+    background: radial-gradient(circle at 50% 50%,
+      rgba(172,81,32,1) 35%, rgba(88,35,7,1) 83%);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    background-clip:text;
+    z-index:2;">
+    We compare AI-generated and human-written hotel reviews across 10 different
+    nationwide languages, identifying notable cross-cultural linguistic differences
+    between real and generated content.
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       3. IMAGE 20  (top-right pillar decoration)
+       Figma: x:1170  y:0  w:98  h:230
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image20.png" alt=""
+       style="left:1170px; top:0; width:98px; height:230px;
+              object-fit:cover; z-index:1;">
+
+  <!-- ══════════════════════════════════════════════════
+       4. HUMAN CHARACTER IMAGE
+       Figma: x:505  y:304  w:217  h:533
+  ══════════════════════════════════════════════════ -->
+  <img src="images/human1.png" alt="Human"
+       style="left:505px; top:304px; width:217px; height:533px;
+              object-fit:cover; z-index:2;">
+
+  <!-- ══════════════════════════════════════════════════
+       5. IMAGE6_1  (hotel icon above human)
+       Figma: x:401  y:265  w:142  h:94
+  ══════════════════════════════════════════════════ -->
+   <img src="images/image6_1.png" alt=""
+        style="left:401px; top:265px; width:142px; height:94px;
+               object-fit:contain; z-index:10;">
+
+  <!-- ══════════════════════════════════════════════════
+       6. IMAGE 3  (VS / comparison graphic centre)
+       Figma: x:684  y:394  w:119  h:78
+  ══════════════════════════════════════════════════ -->
+   <img src="images/image3.png" alt=""
+        style="left:684px; top:394px; width:119px; height:78px;
+               object-fit:contain; z-index:10; transform:rotate(180deg);">
+
+  <!-- ══════════════════════════════════════════════════
+       7. "Human" LABEL
+       Figma: x:431  y:310  w:85  h:30
+       Font : Inter 500 · 25px · #582307
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:431px; top:310px;
+    font-weight:500; font-size:25px; line-height:30px;
+    color:#582307; z-index:10;
+    white-space:nowrap;">
+    Human
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       8. "AI" LABEL
+       Figma: x:711  y:394  w:25  h:30
+       Font : Inter 500 · 25px · #582307
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:711px; top:394px;
+    font-weight:500; font-size:25px; line-height:30px;
+    color:#582307; z-index:10;
+    white-space:nowrap;">
+    AI
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       LEFT COLUMN – HUMAN REVIEWS
+  ══════════════════════════════════════════════════ -->
+
+  <!-- Rectangle 4  (top-left card)
+       Figma: x:62  y:146  w:454  h:135 -->
+  <div style="left:62px; top:146px; width:454px; height:135px;
+              background:rgba(68,153,166,0.46); border-radius:20px; z-index:3;"></div>
+
+  <!-- Spanish text IN Rectangle 4
+       Figma text: x:67  y:154  w:465  h:120
+       Font: Inter 500 · 25px · #000 -->
+  <div style="
+    left:67px; top:154px; width:465px; height:120px;
+    font-weight:500; font-size:25px; line-height:1.2102em;
+    color:#000; z-index:4; overflow:hidden; white-space:pre-wrap;">
+    <span style="font-weight:700;">Spanish:</span>
+    Me gustó todo, super bonito, limpio, cómodo y en una zona muy animada, con un desayuno buffet genial; Nada
+  </div>
+
+  <!-- Rectangle 3  (middle-left card)
+       Figma: x:54  y:312  w:376  h:187 -->
+  <div style="left:54px; top:312px; width:376px; height:187px;
+              background:rgba(68,153,166,0.46); border-radius:20px; z-index:3;"></div>
+
+  <!-- English text IN Rectangle 3
+       Figma text: x:62  y:316  w:378  h:180
+       Font: Inter 500 · 25px · #000 -->
+  <div style="
+    left:62px; top:316px; width:378px; height:180px;
+    font-weight:500; font-size:25px; line-height:1.2102em;
+    color:#000; z-index:4; overflow:hidden; white-space:pre-wrap;">
+    <span style="font-weight:700;">English:</span>
+    The location was very central and the staff was nice and helpful. The room smelled like cigarettes and there was mold in the bathroom.
+  </div>
+
+  <!-- Rectangle 2  (bottom-left card)
+       Figma: x:201  y:526  w:292  h:127 -->
+  <div style="left:201px; top:526px; width:292px; height:127px;
+              background:rgba(68,153,166,0.46); border-radius:20px; z-index:3;"></div>
+
+  <!-- Chinese text IN Rectangle 2
+       Figma text: x:215  y:525  w:290  h:120
+       Font: Inter 500 · 25px · #000 -->
+  <div style="
+    left:215px; top:525px; width:290px; height:120px;
+    font-weight:500; font-size:25px; line-height:1.2102em;
+    color:#000; z-index:4; overflow:hidden; white-space:pre-wrap;">
+    <span style="font-weight:700;">Chinese:</span>
+    早餐丰富，服务态度很好，房间很整洁，离地铁站很近，优秀
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       RIGHT COLUMN – AI REVIEWS
+  ══════════════════════════════════════════════════ -->
+
+  <!-- Rectangle 5  (top-right card)
+       Figma: x:749  y:160  w:399  h:183 -->
+  <div style="left:749px; top:160px; width:399px; height:183px;
+              background:rgba(68,153,166,0.46); border-radius:20px; z-index:3;"></div>
+
+  <!-- Spanish text IN Rectangle 5
+       Figma text: x:755  y:160  w:389  h:180
+       Font: Inter 500 · 25px · #000 -->
+  <div style="
+    left:755px; top:160px; width:389px; height:180px;
+    font-weight:500; font-size:25px; line-height:1.2102em;
+    color:#000; z-index:4; overflow:hidden; white-space:pre-wrap;">
+    <span style="font-weight:700;">Spanish:</span>
+    Buena ubicación central y la habitación estaba limpia; el desayuno era muy básico y la presión del agua en la ducha era bastante baja.
+  </div>
+
+  <!-- Rectangle 6  (middle-right card)
+       Figma: x:799  y:363  w:408  h:164 -->
+  <div style="left:799px; top:363px; width:408px; height:164px;
+              background:rgba(68,153,166,0.46); border-radius:20px; z-index:3;"></div>
+
+  <!-- English text IN Rectangle 6
+       Figma text: x:805  y:370  w:402  h:150
+       Font: Inter 500 · 25px · #000 -->
+  <div style="
+    left:805px; top:370px; width:402px; height:150px;
+    font-weight:500; font-size:25px; line-height:1.2102em;
+    color:#000; z-index:4; overflow:hidden; white-space:pre-wrap;">
+    <span style="font-weight:700;">English:</span>
+    Nothing. Horrible experience; bad customer service, rooms were not clean and the food was below average.
+  </div>
+
+  <!-- Rectangle 7  (bottom-right card)
+       Figma: x:735  y:549  w:388  h:162 -->
+  <div style="left:735px; top:549px; width:388px; height:162px;
+              background:rgba(68,153,166,0.46); border-radius:20px; z-index:3;"></div>
+
+  <!-- Chinese text IN Rectangle 7
+       Figma text: x:744  y:555  w:391  h:150
+       Font: Inter 500 · 25px · #000 -->
+  <div style="
+    left:744px; top:555px; width:391px; height:150px;
+    font-weight:500; font-size:25px; line-height:1.2102em;
+    color:#000; z-index:4; overflow:hidden; white-space:pre-wrap;">
+    <span style="font-weight:700;">Chinese:</span>
+    这家酒店的位置极佳，位于市中心，靠近主要的旅游景点。酒店的装修新颖，服务人员非常礼貌友好，早餐也很美味，种类丰富。
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       DECORATIVE IMAGES
+  ══════════════════════════════════════════════════ -->
+
+  <!-- image 26  (bottom-left, bleeds off left edge)
+       Figma: x:-48  y:591  w:344  h:241 -->
+  <img src="images/image26.png" alt=""
+       style="left:-48px; top:591px; width:344px; height:241px;
+              object-fit:cover; z-index:2;">
+
+  <!-- image 19  (bottom-right decoration)
+       Figma: x:1135  y:590  w:168  h:242 -->
+  <img src="images/image19.png" alt=""
+       style="left:1135px; top:590px; width:168px; height:242px;
+              object-fit:cover; z-index:2;">
+
+  <!-- Side arrow (right-edge navigation)
+       Figma: x:1179  y:382  w:125  h:125 -->
+  <img src="images/side_arrow4.png" alt="next"
+       style="left:1179px; top:382px; width:125px; height:125px;
+              object-fit:cover; z-index:20; cursor:pointer;"
+       onclick="window.location.href='Page2.html'">
+
+</div>
+</div>
+<script>
+  (function () {
+    const BASE_WIDTH = 1280;
+    const BASE_HEIGHT = 832;
+
+    function applyResponsiveScale() {
+      const frame = document.querySelector('.frame');
+      if (!frame) return;
+
+      const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
+      const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+
+      frame.style.transformOrigin = 'center center';
+      frame.style.transform = `scale(${safeScale})`;
+      frame.style.width = `${BASE_WIDTH}px`;
+      frame.style.height = `${BASE_HEIGHT}px`;
+    }
+
+    window.addEventListener('load', applyResponsiveScale);
+    window.addEventListener('resize', applyResponsiveScale);
+  })();
+</script>
+</body>
+</html>

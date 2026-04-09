@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Review – Info Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ── Main frame (exact Figma dimensions: 1280 × 832) ── */
+    .frame {
+      position: relative;
+      width:  1280px;
+      height: 832px;
+      overflow: hidden;
+      background: #ffffff;
+      flex-shrink: 0;
+    }
+
+    /* Every direct child is absolutely positioned */
+    .frame > * { position: absolute; }
+
+    /* ── Bullet list styles ──
+       Figma style_1COE51: Inter 700 · 34px · left · #000000
+       Each paragraph in Figma is a separate bullet point.
+    ── */
+    .info-list {
+  list-style: disc;
+  padding-left: 40px;   /* controls bullet distance */
+}
+
+.info-list li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2102em;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.info-list li::marker {
+  color: #06717D;   /* teal bullet */
+  font-size: 38px;
+}
+
+    /* Navigation arrow hover */
+    .nav-arrow { cursor: pointer; transition: opacity 0.15s; }
+    .nav-arrow:hover { opacity: 0.75; }
+  </style>
+</head>
+<body>
+<div class="viewport-shell">
+<div class="frame">
+
+  <!-- ══════════════════════════════════════════════════
+       1. BACKGROUND WALLPAPER
+       Figma layout_07Q3HF: x:-928  y:-299  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-928px; top:-299px; width:3828px; height:1709px;
+              object-fit:cover; z-index:0;">
+
+  <!-- ══════════════════════════════════════════════════
+       2. IMAGE 7  (left-edge top decoration, partially off-screen)
+       Figma layout_63YB0X: x:-49  y:-12  w:203  h:240
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image7.png" alt=""
+       style="left:-49px; top:-12px; width:203px; height:240px;
+              object-fit:cover; z-index:1;">
+
+  <!-- ══════════════════════════════════════════════════
+       3. PAGE TITLE  "Want to know more about this Research Paper?"
+       Figma layout_SWCYOE: x:191  y:91  w:931  h:48
+       Font : Inter 800 · 40px · center · #06717D  (style_VLPU45 / fill_3SAVTI)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:191px; top:91px; width:931px; height:48px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:40px;
+    line-height:1.2102em; text-align:center;
+    color:#06717D;
+    white-space:nowrap;
+    z-index:5;">
+    Want to know more about this Research Paper?
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       4. BULLET-POINT RESEARCH FACTS
+       Figma layout_XW13U6: x:106  y:195  w:1075  h:533
+       Font : Inter 700 · 34px · left · #000000  (style_1COE51 / fill_X2YT40)
+       Each paragraph in Figma = one bullet point.
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:106px; top:195px; width:1075px; height:533px;
+    z-index:5; overflow:hidden;">
+    <ul class="info-list">
+      <li><span style="font-weight:700;">20,000 Hotel Reviews –</span><span style="font-weight:400;"> 10,000 real &amp; 10,000 fake.</span></li>
+      <li><span style="font-weight:700;">10 Languages –</span><span style="font-weight:400;"> English, Chinese, French, German, Italian, Korean, Romanian, Russian, Spanish, Turkish.</span></li>
+      <li><span style="font-weight:700;">Diverse Locations &amp; Sentiments –</span><span style="font-weight:400;"> Reviews span 10 locations with varying sentiment polarities.</span></li>
+      <li><span style="font-weight:700;">AI vs. Human Language Markers –</span><span style="font-weight:400;"> Syntactic &amp; lexical differences in LLM-generated vs. real hotel reviews.</span></li>
+      <li><span style="font-weight:700;">Deception Detection Insights –</span><span style="font-weight:400;"> Key factors affecting multilingual fake review detection performance.</span></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       5. IMAGE 59  (right-side mid decoration)
+       Figma layout_A6HVS8: x:1095  y:463  w:110  h:172
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image59.png" alt=""
+       style="left:1095px; top:463px; width:110px; height:172px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       6. IMAGE 57  (bottom-right decoration)
+       Figma layout_OLH51P: x:1075  y:635  w:296  h:197
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image57.png" alt=""
+       style="left:1075px; top:635px; width:296px; height:197px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       7. RIGHT NAVIGATION ARROW  (side arrow 4 →)
+       Figma layout_H71RCU: x:1177  y:370  w:125  h:125
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side_arrow4.png" alt="next" class="nav-arrow"
+       style="left:1177px; top:370px; width:125px; height:125px;
+              object-fit:cover; z-index:20;"
+    onclick="window.location.href='ScanPage.html'">
+
+</div>
+</div>
+<script>
+  (function () {
+    const BASE_WIDTH = 1280;
+    const BASE_HEIGHT = 832;
+
+    function applyResponsiveScale() {
+      const frame = document.querySelector('.frame');
+      if (!frame) return;
+
+      const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
+      const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+
+      frame.style.transformOrigin = 'center center';
+      frame.style.transform = `scale(${safeScale})`;
+      frame.style.width = `${BASE_WIDTH}px`;
+      frame.style.height = `${BASE_HEIGHT}px`;
+    }
+
+    window.addEventListener('load', applyResponsiveScale);
+    window.addEventListener('resize', applyResponsiveScale);
+  })();
+</script>
+</body>
+</html>

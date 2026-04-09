@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Review – Hints Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ── Main frame — exact Figma canvas: 1280 × 832 ── */
+    .frame {
+      position: relative;
+      width:  1280px;
+      height: 832px;
+      overflow: hidden;
+      background: #ffffff;
+      flex-shrink: 0;
+    }
+
+    /* Every direct child is absolutely positioned */
+    .frame > * { position: absolute; }
+
+    /* Navigation arrow hover */
+    .nav-arrow {
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .nav-arrow:hover { opacity: 0.75; }
+  </style>
+</head>
+<body>
+<div class="viewport-shell">
+<div class="frame">
+
+  <!-- ══════════════════════════════════════════════════
+       1. BACKGROUND WALLPAPER
+       Figma: x:-946  y:-320  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-946px; top:-320px; width:3828px; height:1709px;
+              object-fit:cover; z-index:0;">
+
+  <!-- ══════════════════════════════════════════════════
+       2. DECORATIVE — image 7  (top-left corner)
+       Figma: x:0  y:0  w:180  h:213
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image7.png" alt=""
+       style="left:0; top:0; width:180px; height:213px;
+              object-fit:cover; z-index:2;">
+
+  <!-- ══════════════════════════════════════════════════
+       3. DECORATIVE — image 15  (right-side tall strip)
+       Figma: x:1139  y:-15  w:127  h:398
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image15.png" alt=""
+       style="left:1139px; top:-15px; width:127px; height:398px;
+              object-fit:cover; z-index:2;">
+
+  <!-- ══════════════════════════════════════════════════
+       4. PAGE TITLE — "Hint to ace in your game"
+       Figma: x:331  y:119  w:544  h:54
+       Font : Inter 800 · 45px · center
+       Fill : linear-gradient(90deg, #AC5120 0%, #582307 91%)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:331px; top:119px; width:544px; height:54px;
+    font-family:'Inter', sans-serif;
+    font-weight:800; font-size:45px;
+    line-height:1.2102em; text-align:center;
+    background: linear-gradient(90deg, rgba(172,81,32,1) 0%, rgba(88,35,7,1) 91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    z-index:5;">
+    Hint to ace in your game
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       5. BODY TEXT — hints content
+       Figma: x:111  y:226  w:1033  h:384
+       Font : Inter 700 · 34px · left · #000000
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:111px; top:226px; width:1033px; height:384px;
+    font-family:'Inter', sans-serif;
+          font-weight:400; font-size:34px;
+    line-height:1.2102em; text-align:left;
+    color:#000000;
+    z-index:5;">
+          <p style="margin-bottom:0.6em;"><span style="font-weight:700;">Analytic writing - </span>LLMs love structure. There's more logic and less personal touch.</p>
+          <p style="margin-bottom:0.6em;"><span style="font-weight:700;">Descriptiveness - </span>LLM post overflow with adjectives. They're more descriptive and elaborate, painting detailed scenes. Like "Radiant sunrise of infinite hope."</p>
+          <p><span style="font-weight:700;">Readability - </span>Human developed post are easier to read, they keep it heart felt. LLM ones use longer words and more complex phrasing by keeping it highbrow.</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       6. LEFT NAVIGATION ARROW  (← previous)
+       Figma: x:0  y:382  w:125  h:125
+       Flipped horizontally to point left
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side-arrow.png" alt="previous" class="nav-arrow"
+       style="left:0; top:382px; width:125px; height:125px;
+              object-fit:cover; transform:scaleX(-1);
+              z-index:20;"
+       onclick="window.location.href='Page1.html'">
+
+  <!-- ══════════════════════════════════════════════════
+       7. RIGHT NAVIGATION ARROW  (→ next)
+       Figma: x:1179  y:382  w:125  h:125
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side-arrow.png" alt="next" class="nav-arrow"
+       style="left:1179px; top:382px; width:125px; height:125px;
+              object-fit:cover; z-index:20;"
+       onclick="window.location.href='Page3.html'">
+
+  <!-- ══════════════════════════════════════════════════
+       8. DECORATIVE — image 18  (left lower decoration)
+       Figma: x:58  y:649  w:177  h:183
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image18.png" alt=""
+       style="left:58px; top:649px; width:177px; height:183px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       9. DECORATIVE — image 17  (bottom-left horizontal strip)
+       Figma: x:-16  y:763  w:325  h:115
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image17.png" alt=""
+       style="left:-16px; top:763px; width:325px; height:115px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       10. DECORATIVE — image 56  (bottom-right decoration)
+       Figma: x:1091  y:535  w:224  h:314
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image56.png" alt=""
+       style="left:1091px; top:535px; width:224px; height:314px;
+              object-fit:cover; z-index:3;">
+
+</div>
+</div>
+<script>
+  (function () {
+    const BASE_WIDTH = 1280;
+    const BASE_HEIGHT = 832;
+
+    function applyResponsiveScale() {
+      const frame = document.querySelector('.frame');
+      if (!frame) return;
+
+      const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
+      const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+
+      frame.style.transformOrigin = 'center center';
+      frame.style.transform = `scale(${safeScale})`;
+      frame.style.width = `${BASE_WIDTH}px`;
+      frame.style.height = `${BASE_HEIGHT}px`;
+    }
+
+    window.addEventListener('load', applyResponsiveScale);
+    window.addEventListener('resize', applyResponsiveScale);
+  })();
+</script>
+</body>
+</html>

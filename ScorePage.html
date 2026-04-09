@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Review – Score Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ── Main frame (exact Figma dimensions: 1280 × 832) ── */
+    .frame {
+      position: relative;
+      width:  1280px;
+      height: 832px;
+      overflow: hidden;
+      background: #ffffff;
+      flex-shrink: 0;
+    }
+
+    /* Every direct child is absolutely positioned */
+    .frame > * { position: absolute; }
+
+    /* Button hover */
+    .btn-action { cursor: pointer; transition: opacity 0.15s; }
+    .btn-action:hover { opacity: 0.80; }
+
+    /* Navigation arrow hover */
+    .nav-arrow { cursor: pointer; transition: opacity 0.15s; }
+    .nav-arrow:hover { opacity: 0.75; }
+  </style>
+</head>
+<body>
+<div class="viewport-shell">
+<div class="frame">
+
+  <!-- ══════════════════════════════════════════════════
+       1. BACKGROUND WALLPAPER  (layer 1)
+       Figma layout_07Q3HF: x:-928  y:-299  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-928px; top:-299px; width:3828px; height:1709px;
+              object-fit:cover; z-index:0;">
+
+  <!-- ══════════════════════════════════════════════════
+       2. BACKGROUND WALLPAPER  (layer 2 — same image, wallpaper 2)
+       Figma layout_07Q3HF: x:-928  y:-299  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-928px; top:-299px; width:3828px; height:1709px;
+              object-fit:cover; z-index:1;">
+
+  <!-- ══════════════════════════════════════════════════
+       3. IMAGE 49  (large center-left trophy / celebration graphic)
+       Figma layout_KX5YNU: x:160  y:20  w:442  h:437
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image49.png" alt=""
+       style="left:160px; top:20px; width:442px; height:437px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       4. IMAGE 51  (left-side decoration)
+       Figma layout_NZPVAE: x:3  y:363  w:170  h:264
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image51.png" alt=""
+       style="left:3px; top:363px; width:170px; height:264px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       5. IMAGE 52  (right-center large graphic)
+       Figma layout_RR9M3J: x:602  y:430  w:597  h:357
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image52.png" alt=""
+       style="left:602px; top:430px; width:597px; height:357px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       6. IMAGE 54  (right-edge decoration)
+       Figma layout_58N93C: x:1099  y:508  w:225  h:324
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image54.png" alt=""
+       style="left:1099px; top:508px; width:225px; height:324px;
+              object-fit:cover; z-index:4;">
+
+  <!-- ══════════════════════════════════════════════════
+       7. IMAGE 53  (bottom-left decoration)
+       Figma layout_AHM8UW: x:-21  y:609  w:218  h:232
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image53.png" alt=""
+       style="left:-21px; top:609px; width:218px; height:232px;
+              object-fit:cover; z-index:4;">
+
+  <!-- ══════════════════════════════════════════════════
+       8. IMAGE 24  (bottom horizontal strip, opacity 0.95)
+       Figma layout_BF0L89: x:453  y:647  w:856  h:201
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image24.png" alt=""
+       style="left:453px; top:647px; width:856px; height:201px;
+              object-fit:cover; opacity:0.9499999880790714; z-index:1;">
+
+  <!-- ══════════════════════════════════════════════════
+       9. "GAME SCORE" LABEL
+       Figma layout_XM4QBJ: x:777  y:132  w:325  h:58
+       Font : Inter 800 · 48px · left · #06717D  (style_OCCG0R / fill_3SAVTI)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:777px; top:132px; width:325px; height:58px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:48px;
+    line-height:1.2102em; text-align:left;
+    color:#06717D;
+    white-space:nowrap;
+    z-index:6;">
+    GAME SCORE
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       10. "3/5" SCORE VALUE
+       Figma layout_C6BFS2: x:325  y:200  w:111  h:77
+       Font : Inter 800 · 64px · left · #844F0A  (style_6REB0V / fill_A7BN9Q)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:325px; top:200px; width:111px; height:77px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:64px;
+    line-height:1.2102em; text-align:left;
+    color:#844F0A;
+    white-space:nowrap;
+    z-index:6;">
+          <span id="final-score-value">0/5</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       11. RESULT MESSAGE (dynamically updated based on score)
+       Figma layout_UQ4LM3: x:814  y:239  w:285  h:102
+       Font : Inter 600 · 42px · center · #000000  (style_X0QYVE / fill_X2YT40)
+  ══════════════════════════════════════════════════ -->
+  <div id="resultMessage" style="
+  left:790px; 
+  top:239px; 
+  width:350px; 
+  font-family:'Inter',sans-serif;
+  font-weight:600; 
+  font-size:42px;
+  line-height:1.3em; 
+  text-align:center;
+  color:#000000;
+  z-index:6;">
+
+  <div>Well played 🤩</div>
+  <div>Keep it up!</div>
+
+</div>
+
+  <!-- ══════════════════════════════════════════════════
+       12. REPLAY BUTTON  (Rectangle 16 background)
+       Figma layout_3PTHC3: x:241  y:569  w:189  h:58  r:20  fill:#EBADAD
+  ══════════════════════════════════════════════════ -->
+  <div class="btn-action"
+       style="
+         left:241px; top:569px; width:189px; height:58px;
+         background:#EBADAD;
+         border-radius:20px;
+         z-index:10;"
+       onclick="GameScore.reset(); window.location.href='page3.html'">
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       13. REPLAY ICON  (replay 1)
+       Figma layout_PB8T1F: x:254  y:578  w:40  h:40
+  ══════════════════════════════════════════════════ -->
+  <img src="images/replay.png" alt="Replay"
+       style="left:254px; top:578px; width:40px; height:40px;
+              object-fit:contain; z-index:11; pointer-events:none;">
+
+  <!-- ══════════════════════════════════════════════════
+       14. "Replay" TEXT
+       Figma layout_BF0QRU: x:305  y:576  w:111  h:41
+       Font : Inter 600 · 34px · left · #000000  (style_20CRK8 / fill_X2YT40)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:305px; top:576px; width:111px; height:41px;
+    font-family:'Inter',sans-serif;
+    font-weight:600; font-size:34px;
+    line-height:1.2102em; text-align:left;
+    color:#000000;
+    white-space:nowrap;
+    z-index:11; pointer-events:none;">
+    Replay
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       15. "Back to Menu" BUTTON  (Rectangle 18 background)
+       Figma layout_5WME49: x:220  y:647  w:256  h:57  r:20  fill:#EBADAD
+  ══════════════════════════════════════════════════ -->
+  <div class="btn-action"
+       style="
+         left:220px; top:647px; width:256px; height:57px;
+         background:#EBADAD;
+         border-radius:20px;
+                     z-index:10;">
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       16. "Back to Menu" TEXT
+       Figma layout_JRK336: x:236  y:655  w:224  h:41
+       Font : Inter 600 · 34px · left · #000000  (style_20CRK8 / fill_X2YT40)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:236px; top:655px; width:224px; height:41px;
+    font-family:'Inter',sans-serif;
+    font-weight:600; font-size:34px;
+    line-height:1.2102em; text-align:left;
+    color:#000000;
+    white-space:nowrap;
+    z-index:11; pointer-events:none;">
+          Back to Menu
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       17. LEFT NAVIGATION ARROW  (side arrow 3 ←)
+       Figma layout_288B19: x:-17  y:370  w:125  h:125
+       Flipped horizontally to point left
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side_arrow3.png" alt="previous" class="nav-arrow"
+       style="left:-17px; top:370px; width:125px; height:125px;
+              object-fit:cover; transform:scaleX(-1);
+              z-index:20;"
+       onclick="window.location.href='ScanPage.html'">
+
+     <script src="score.js"></script>
+     <script>
+          window.addEventListener('DOMContentLoaded', () => {
+               GameScore.render('#final-score-value');
+
+               // Get the final score
+               const scoreText = document.getElementById('final-score-value').innerText;
+               const score = parseInt(scoreText.split('/')[0]);
+
+               // Pick message based on score
+               let message = "";
+
+               if (score >= 5) {
+                    message = "Perfect score🤩 You crushed it!";
+               }
+               else if (score >= 3) {
+                    message = "Well played🤩 Keep it up!";
+               }
+               else if (score >= 0) {
+                    message = "You got this!🎮 Wanna play again?";
+               }
+
+               document.getElementById("resultMessage").innerHTML = message;
+          });
+     </script>
+
+</div>
+</div>
+<script>
+  (function () {
+    const BASE_WIDTH = 1280;
+    const BASE_HEIGHT = 832;
+
+    function applyResponsiveScale() {
+      const frame = document.querySelector('.frame');
+      if (!frame) return;
+
+      const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
+      const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+
+      frame.style.transformOrigin = 'center center';
+      frame.style.transform = `scale(${safeScale})`;
+      frame.style.width = `${BASE_WIDTH}px`;
+      frame.style.height = `${BASE_HEIGHT}px`;
+    }
+
+    window.addEventListener('load', applyResponsiveScale);
+    window.addEventListener('resize', applyResponsiveScale);
+  })();
+</script>
+</body>
+</html>

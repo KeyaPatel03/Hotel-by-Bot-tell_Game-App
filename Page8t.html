@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Review – Page 5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ── Main frame (exact Figma dimensions: 1280 × 832) ── */
+    .frame {
+      position: relative;
+      width:  1280px;
+      height: 832px;
+      overflow: hidden;
+      background: #ffffff;
+      flex-shrink: 0;
+    }
+
+    /* Every direct child is absolutely positioned */
+    .frame > * { position: absolute; }
+
+    /* Clickable choice labels */
+    .btn-choice {
+      cursor: pointer;
+      transition: opacity 0.18s;
+    }
+    .btn-choice:hover { opacity: 0.72; }
+
+          .glow-human {
+               filter:
+                    drop-shadow(0px 4px 15px rgba(97, 240, 123, 0.36))
+                    drop-shadow(0px 4px 8px rgba(97, 240, 123, 0.36))
+                    drop-shadow(0px 0px 13px rgba(97, 240, 123, 0.36));
+          }
+  </style>
+</head>
+<body>
+<div class="viewport-shell">
+<div class="frame">
+
+  <!-- ══════════════════════════════════════════════════
+       1. BACKGROUND WALLPAPER
+       Figma: layout_8MIQCS → x:-928  y:-299  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-928px; top:-299px; width:3828px; height:1709px;
+              object-fit:cover; z-index:0;">
+
+  <!-- ══════════════════════════════════════════════════
+                2. SCORE: 0/5  (top-right score display)
+       Figma: x:1081  y:21  w:193  h:108
+                Two-line stack to match design:
+                SCORE:
+                0/5
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:1081px; top:21px; width:193px; height:108px;
+    font-family:'Inter',sans-serif;
+          display:flex; flex-direction:column; justify-content:flex-start;
+          gap:0;
+    text-align:left;
+    z-index:2;">
+          <span style="
+               font-weight:700;
+               font-size:32px;
+               line-height:1;
+               color:#767676;">
+               SCORE:
+          </span>
+          <span style="
+               margin-top:4px;
+               font-weight:800;
+               font-size:45px;
+               line-height:1;
+               color:#111111;">
+               <span id="score-value">0/5</span>
+          </span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       3. IMAGE 30  (right-edge vertical decoration)
+       Figma: x:1179  y:0  w:60  h:158
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image30.png" alt=""
+       style="left:1179px; top:0; width:60px; height:158px;
+              object-fit:cover; z-index:3;">
+
+  <!-- ══════════════════════════════════════════════════
+       4. REVIEW TEXT  (hotel review the player must judge)
+       Figma: x:56  y:158  w:1149  h:156
+       Font : Inter 600 · 32px · center · #06717D
+  ══════════════════════════════════════════════════ -->
+  <div style="
+          left:56px; top:155px; width:1149px; height:195px;
+    font-family:'Inter',sans-serif;
+    font-weight:600; font-size:32px;
+    line-height:1.2102em; text-align:center;
+    color:#06717D;
+    z-index:4;">
+    Everything went well - the hotel is easy to find, the reception staff pleasant and well organized. The room was clean and comfortable. The system of sheets/towels is understandable at this price and a good way to define the culture of the hotel.
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       5. DESK BELL DRAWING  (human character, center-left)
+       Figma: x:334  y:381  w:326  h:404
+  ══════════════════════════════════════════════════ -->
+     <img src="images/desk_bell_drawing.png" alt="Human at desk" class="glow-human"
+       style="left:334px; top:381px; width:326px; height:404px;
+              object-fit:cover; z-index:5;">
+
+  <!-- ══════════════════════════════════════════════════
+       6. AI AT DESK  (AI character, center-right)
+       Figma: x:693  y:342  w:348  h:522
+  ══════════════════════════════════════════════════ -->
+  <img src="images/ai_at_desk.png" alt="AI at desk"
+       style="left:693px; top:342px; width:348px; height:522px;
+              object-fit:cover; z-index:6;">
+
+  <!-- ══════════════════════════════════════════════════
+       7. IMAGE 25  (left lower decorative figure)
+       Figma: x:242  y:525  w:159  h:271
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image25.png" alt=""
+       style="left:242px; top:525px; width:159px; height:271px;
+              object-fit:cover; z-index:7;">
+
+  <!-- ══════════════════════════════════════════════════
+       8. IMAGE 38  (right lower decoration)
+       Figma: x:986  y:556  w:130  h:232
+  ══════════════════════════════════════════════════ -->
+  <img src="images/image38.png" alt=""
+       style="left:986px; top:556px; width:130px; height:232px;
+              object-fit:cover; z-index:8;">
+
+  <!-- ══════════════════════════════════════════════════
+       9. "Human" CHOICE LABEL
+       Figma: x:414  y:640  w:184  h:63
+       Font : Inter 800 · 52px · center · #582307
+  ══════════════════════════════════════════════════ -->
+  <div class="btn-choice"
+       style="
+    left:414px; top:640px; width:184px; height:63px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:52px;
+    line-height:1.2102em; text-align:center;
+    color:#582307;
+    white-space:nowrap;
+    z-index:9;">
+    Human
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       10. "AI" CHOICE LABEL
+       Figma: x:839  y:640  w:55  h:63
+       Font : Inter 800 · 52px · center · #582307
+  ══════════════════════════════════════════════════ -->
+  <div class="btn-choice"
+       style="
+    left:839px; top:640px; width:55px; height:63px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:52px;
+    line-height:1.2102em; text-align:center;
+    color:#582307;
+    white-space:nowrap;
+    z-index:10;">
+    AI
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       11. RIGHT NAVIGATION ARROW  (advance to next round)
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side_arrow4.png" alt="next" class="nav-arrow"
+       style="left:1179px; top:382px; width:125px; height:125px;
+              object-fit:cover; z-index:20;"
+       onclick="window.location.href='Page9.html'">
+
+     <script src="score.js"></script>
+     <script>
+          GameScore.render('#score-value');
+     </script>
+
+</div>
+</div>
+<script>
+  (function () {
+    const BASE_WIDTH = 1280;
+    const BASE_HEIGHT = 832;
+
+    function applyResponsiveScale() {
+      const frame = document.querySelector('.frame');
+      if (!frame) return;
+
+      const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
+      const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+
+      frame.style.transformOrigin = 'center center';
+      frame.style.transform = `scale(${safeScale})`;
+      frame.style.width = `${BASE_WIDTH}px`;
+      frame.style.height = `${BASE_HEIGHT}px`;
+    }
+
+    window.addEventListener('load', applyResponsiveScale);
+    window.addEventListener('resize', applyResponsiveScale);
+  })();
+</script>
+</body>
+</html>

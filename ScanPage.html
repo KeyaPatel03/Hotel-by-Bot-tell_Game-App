@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Review – Scan Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #e8e8e8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .viewport-shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ── Main frame (exact Figma dimensions: 1280 × 832) ── */
+    .frame {
+      position: relative;
+      width:  1280px;
+      height: 832px;
+      overflow: hidden;
+      background: #ffffff;
+      flex-shrink: 0;
+    }
+
+    /* Every direct child is absolutely positioned */
+    .frame > * { position: absolute; }
+
+    /* Navigation arrow hover */
+    .nav-arrow { cursor: pointer; transition: opacity 0.15s; }
+    .nav-arrow:hover { opacity: 0.75; }
+
+    /* Button hover */
+    .btn-action { cursor: pointer; transition: opacity 0.15s; }
+    .btn-action:hover { opacity: 0.80; }
+  </style>
+</head>
+<body>
+<div class="viewport-shell">
+<div class="frame">
+
+  <!-- ══════════════════════════════════════════════════
+       1. BACKGROUND WALLPAPER  (layer 1)
+       Figma layout_07Q3HF: x:-928  y:-299  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-928px; top:-299px; width:3828px; height:1709px;
+              object-fit:cover; z-index:0;">
+
+  <!-- ══════════════════════════════════════════════════
+       2. BACKGROUND WALLPAPER  (layer 2 — same image, Figma: wallpaper 2)
+       Figma layout_07Q3HF: x:-928  y:-299  w:3828  h:1709
+  ══════════════════════════════════════════════════ -->
+  <img src="images/wallpaper1.png" alt=""
+       style="left:-928px; top:-299px; width:3828px; height:1709px;
+              object-fit:cover; z-index:1;">
+
+  <!-- ══════════════════════════════════════════════════
+       3. "Research Paper" SECTION LABEL
+       Figma layout_UGGLKC: x:227  y:137  w:310  h:48
+       Font : Inter 800 · 40px · left · #06717D  (style_NP227L / fill_3SAVTI)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:227px; top:137px; width:310px; height:48px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:40px;
+    line-height:1.2102em; text-align:left;
+    color:#06717D;
+    white-space:nowrap;
+    z-index:5;">
+    Research Paper
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       4. "Code & Dataset" SECTION LABEL
+       Figma layout_26V0NS: x:776  y:137  w:305  h:48
+       Font : Inter 800 · 40px · left · #06717D  (style_NP227L / fill_3SAVTI)
+  ══════════════════════════════════════════════════ -->
+  <div style="
+    left:776px; top:137px; width:305px; height:48px;
+    font-family:'Inter',sans-serif;
+    font-weight:800; font-size:40px;
+    line-height:1.2102em; text-align:left;
+    color:#06717D;
+    white-space:nowrap;
+    z-index:5;">
+    Code &amp; Dataset
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       5. PAPER QR SCANNER IMAGE  (Game2_paper_scanner 1)
+       Figma layout_TUEL04: x:227  y:233  w:303  h:303
+  ══════════════════════════════════════════════════ -->
+  <img src="images/paper_scanner.png" alt="Research Paper QR Code"
+       style="left:227px; top:233px; width:303px; height:303px;
+              object-fit:cover; z-index:4;">
+
+  <!-- ══════════════════════════════════════════════════
+       6. DATASET QR SCANNER IMAGE  (Game2_dataset_scanner 1)
+       Figma layout_ANUW2G: x:792  y:233  w:303  h:303
+  ══════════════════════════════════════════════════ -->
+  <img src="images/dataset_scanner.png" alt="Code &amp; Dataset QR Code"
+       style="left:792px; top:233px; width:303px; height:303px;
+              object-fit:cover; z-index:4;">
+
+  <!-- ══════════════════════════════════════════════════
+       7. "View Score" BUTTON  (Rectangle 16 + text)
+       Rect  Figma layout_QSU92E: x:556  y:603  w:210  h:57  r:20  fill:#EBADAD
+       Text  Figma layout_LHFXTW: x:568  y:611  w:186  h:41
+       Font : Inter 600 · 34px · left · #000000  (style_20CRK8 / fill_X2YT40)
+  ══════════════════════════════════════════════════ -->
+  <div class="btn-action"
+       style="
+         left:556px; top:603px; width:210px; height:57px;
+         background:#EBADAD;
+         border-radius:20px;
+         z-index:10;"
+       onclick="window.location.href='ScorePage.html'">
+  </div>
+  <div class="btn-action"
+       style="
+         left:568px; top:611px; width:186px; height:41px;
+         font-family:'Inter',sans-serif;
+         font-weight:600; font-size:34px;
+         line-height:1.2102em; text-align:left;
+         color:#000000;
+         white-space:nowrap;
+         z-index:11; pointer-events:none;">
+    View Score
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       8. "Back to Menu" BUTTON  (Rectangle 17 + text)
+       Rect  Figma layout_WC4N2L: x:536  y:694  w:256  h:57  r:20  fill:#EBADAD
+       Text  Figma layout_VL89IT: x:552  y:702  w:224  h:41
+       Font : Inter 600 · 34px · left · #000000  (style_20CRK8 / fill_X2YT40)
+  ══════════════════════════════════════════════════ -->
+  <div class="btn-action"
+       style="
+         left:536px; top:694px; width:256px; height:57px;
+         background:#EBADAD;
+         border-radius:20px;
+                     z-index:10;">
+  </div>
+  <div class="btn-action"
+       style="
+         left:552px; top:702px; width:224px; height:41px;
+         font-family:'Inter',sans-serif;
+         font-weight:600; font-size:34px;
+         line-height:1.2102em; text-align:left;
+         color:#000000;
+         white-space:nowrap;
+         z-index:11; pointer-events:none;">
+    Back to Menu
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       9. LEFT NAVIGATION ARROW  (side arrow 3 ←)
+       Figma layout_288B19: x:-17  y:370  w:125  h:125
+       Flipped horizontally to point left
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side_arrow3.png" alt="previous" class="nav-arrow"
+       style="left:-17px; top:370px; width:125px; height:125px;
+              object-fit:cover; transform:scaleX(-1);
+              z-index:20;"
+       onclick="window.location.href='InfoPage.html'">
+
+  <!-- ══════════════════════════════════════════════════
+       10. RIGHT NAVIGATION ARROW  (side arrow 4 →)
+       Figma layout_H71RCU: x:1177  y:370  w:125  h:125
+  ══════════════════════════════════════════════════ -->
+  <img src="images/side_arrow4.png" alt="next" class="nav-arrow"
+       style="left:1177px; top:370px; width:125px; height:125px;
+              object-fit:cover; z-index:20;"
+     onclick="window.location.href='ScorePage.html'">
+
+</div>
+</div>
+<script>
+  (function () {
+    const BASE_WIDTH = 1280;
+    const BASE_HEIGHT = 832;
+
+    function applyResponsiveScale() {
+      const frame = document.querySelector('.frame');
+      if (!frame) return;
+
+      const scale = Math.min(window.innerWidth / BASE_WIDTH, window.innerHeight / BASE_HEIGHT);
+      const safeScale = Number.isFinite(scale) && scale > 0 ? scale : 1;
+
+      frame.style.transformOrigin = 'center center';
+      frame.style.transform = `scale(${safeScale})`;
+      frame.style.width = `${BASE_WIDTH}px`;
+      frame.style.height = `${BASE_HEIGHT}px`;
+    }
+
+    window.addEventListener('load', applyResponsiveScale);
+    window.addEventListener('resize', applyResponsiveScale);
+  })();
+</script>
+</body>
+</html>
