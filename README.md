@@ -6,10 +6,10 @@ A client-side interactive game built with plain HTML, CSS and JavaScript. The pr
 
 **Project snapshot**
 
-Vercel deployed link: https://hotel-by-bot-tellgame-app.vercel.app/
-Paper link: 
-Code & Database link: https://github.com/MichiganNLP/multilingual_reviews_deception/tree/master/data
-Frontend: static HTML + CSS (no framework). Minimal dev tooling via http-server for local hosting.
+- Vercel deployed link: https://hotel-by-bot-tellgame-app.vercel.app/
+- Paper link: 
+- Code & Database link: https://github.com/MichiganNLP/multilingual_reviews_deception/tree/master/data
+- Frontend: static HTML + CSS (no framework). Minimal dev tooling via http-server for local hosting.
 
 ---
 
